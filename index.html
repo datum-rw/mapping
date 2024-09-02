@@ -100,14 +100,14 @@
         var legend = new Legend({
           view: view
         });
-        view.ui.add(legend, "bottom-left");
+        view.ui.add(legend, "bottom-right");
 
         // Initialize Swipe widget, but do not add it yet
         let swipe = new Swipe({
           view: view,
           leadingLayers: [webmap.layers.getItemAt(1)], // First layer
           trailingLayers: [webmap.layers.getItemAt(2)], // Second layer
-          position: 0 // Position of the swipe tool as a percentage
+          position: 10 // Position of the swipe tool as a percentage
         });
 
         // Add event listener to the button to activate the swipe tool
